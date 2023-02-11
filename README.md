@@ -8,22 +8,22 @@ Para instalar e usar este bot, você precisará ter o [Node.js](https://nodejs.o
 
 1. Clone este repositório em sua máquina local.
 2. Acesse a pasta do projeto no seu terminal e execute o comando `npm install` para instalar as dependências necessárias.
-3. Renomeie o arquivo `.env.example` para `.env` e insira as informações necessárias, incluindo a chave de API do seu aplicativo Bot registrado.
-4. Inicie o bot executando o comando `npm start`.
+3. Renomeie o arquivo `config.json.sample` para `config.json` e insira as informações necessárias, incluindo a chave de API do seu aplicativo Bot registrado, a chave guild_id é o ID do servidor onde deseja instalar o BOT.
+4. Inicie o bot executando o comando `node index.js`.
 
 ## Comandos
 
 Liste os comandos disponíveis para o seu bot e como usá-los. Aqui estão alguns exemplos:
 
-- `!ping` - Exibe a latência do bot.
-- `!git` - Relembra comandos do git
-- `!moeda` - API de Cotações de Moedas
+- `/ping` - Exibe a latência do bot.
+- `/git` - Relembra comandos do git
+- `/moeda` - API de Cotações de Moedas
 
 ## Desenvolvimento
 
 Este projeto foi desenvolvido usando o [Discord.js](https://discord.js.org/#/) como biblioteca principal.
 
-## Para criar um bot acesse [applications](https://discord.com/developers/applications)
+## Para criar um bot acesse: [applications](https://discord.com/developers/applications)
 Crie uma conta de aplicativo: Vá ao site da Discord Developers e crie uma nova conta de aplicativo.
 
 Adicionar um novo bot ao aplicativo: Clique em "Criar aplicativo" e depois clique em "Criar Bot".
