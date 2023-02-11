@@ -13,8 +13,6 @@ Para instalar e usar este bot, você precisará ter o [Node.js](https://nodejs.o
 
 ## Comandos
 
-Liste os comandos disponíveis para o seu bot e como usá-los. Aqui estão alguns exemplos:
-
 - `/ping` - Exibe a latência do bot.
 - `/git` - Relembra comandos do git
 - `/moeda` - API de Cotações de Moedas
