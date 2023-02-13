@@ -1,35 +1,103 @@
-# Bot Discord
+# Discord Bot
+This is a sample Discord bot made with Node.js. It was created with the goal of providing a solid foundation for developing other Discord bots.
 
-Este é um bot de exemplo para o Discord feito com Node.js. Ele foi criado com o objetivo de fornecer uma base sólida para o desenvolvimento de outros bots do Discord.
+## Installation
+To install and use this bot, you will need to have [Node.js](https://nodejs.org/) installed on your machine. In addition, you will need a [Discord](https://discord.com/) account and a bot application registered on the [Discord Developer Portal](https://discord.com/developers/applications).
 
-## Instalação
 
-Para instalar e usar este bot, você precisará ter o [Node.js](https://nodejs.org/) instalado em sua máquina. Além disso, você precisará de uma conta no [Discord](https://discord.com/) e de um aplicativo Bot registrado na [Discord Developer Portal](https://discord.com/developers/applications).
+You only need 3 things on your local machine: `git`, `docker` and `make`
 
-1. Clone este repositório em sua máquina local.
-2. Acesse a pasta do projeto no seu terminal e execute o comando `npm install` para instalar as dependências necessárias.
-3. Renomeie o arquivo `config.json.sample` para `config.json` e insira as informações necessárias, incluindo a chave de API do seu aplicativo Bot registrado, a chave guild_id é o ID do servidor onde deseja instalar o BOT.
-4. Inicie o bot executando o comando `node index.js`.
+### Install Docker
+Follow the installation steps for your system.
 
-## Comandos
+	
+<summary>Linux</summary>
+	
+1. Install docker
 
-- `/ping` - Exibe a latência do bot.
-- `/git` - Relembra comandos do git
-- `/moeda` - API de Cotações de Moedas
+	* Install Docker on [Debian](https://docs.docker.com/engine/installation/linux/docker-ce/debian/)
+	* Install Docker on [Ubuntu](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
+	* Install Docker on [CentOS](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)
 
-## Desenvolvimento
+2. Install Docker Compose
+	*  [Install Compose](https://docs.docker.com/compose/install/)
 
-Este projeto foi desenvolvido usando o [Discord.js](https://discord.js.org/#/) como biblioteca principal.
+3. Configure permissions
+	
+	* [Manage Docker as a non-root user](https://docs.docker.com/install/linux/linux-postinstall/)
 
-## Para criar um bot acesse: [applications](https://discord.com/developers/applications)
-Crie uma conta de aplicativo: Vá ao site da Discord Developers e crie uma nova conta de aplicativo.
 
-Adicionar um novo bot ao aplicativo: Clique em "Criar aplicativo" e depois clique em "Criar Bot".
+## Install Make
+Installing the make command on linux
 
-Configurar o bot: Adicione um nome e uma imagem de perfil para o seu bot, além de configurar outros detalhes se desejar.
+```
+sudo apt-get update 
+```
 
-Conceder permissões: Conceda as permissões necessárias ao seu bot para que ele possa funcionar corretamente.
+```
+sudo apt-get install -y make
+```
 
-Adicionar o bot ao seu servidor: Clique no link "Invite Bot" na seção "OAuth2" e selecione o servidor onde você deseja adicionar o bot.
+You can install make by downloading the build-essential package, as follows 
+```
+sudo apt install build-essential
+```
 
-Executar o bot: Depois de codificar e testar o bot, você pode executá-lo em sua máquina local ou em uma máquina remota, como uma VPS.
+
+## App Install
+Clone this repo
+```
+git clone https://github.com/jamacio/bot-discord.git
+```
+---
+Go to the directory and copy the configuration example
+```
+cd docker-magento
+```
+```
+cp config.json.sample config.json
+```
+---
+After running the build command
+```
+make build
+```
+
+## Usage
+Start Application
+```
+make up
+```
+---
+Stop Application
+```
+make stop
+```
+---
+Watch Application
+```
+make watch
+```
+
+## Commands
+
+- `/ping` - Display the bot's latency.
+- `/git` - Remind git commands
+- `/moeda` - Currency Quotation API
+
+## Development
+
+This project was developed using [Discord.js](https://discord.js.org/#/) as the main library.
+
+## To create a bot go to: [applications](https://discord.com/developers/applications)
+Create an application account: Go to the Discord Developers site and create a new application account.
+
+Add a new bot to the app: Click "Create App" and then click "Create Bot".
+
+Configure the bot: Add a name and profile picture for your bot, and configure other details if you wish.
+
+Grant permissions: Grant the necessary permissions to your bot so that it can function properly.
+
+Add the bot to your server: Click the "Invite Bot" link in the "OAuth2" section and select the server where you want to add the bot.
+
+Run the bot: After coding and testing the bot, you can run it on your local machine or on a remote machine, such as a VPS.

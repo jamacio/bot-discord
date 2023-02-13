@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    container_name: bot_discord_node
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/opt/app
+      - /opt/app/node_modules
