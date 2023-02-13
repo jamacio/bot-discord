@@ -52,7 +52,7 @@ git clone https://github.com/jamacio/bot-discord.git
 ---
 Go to the directory and copy the configuration example
 ```
-cd docker-magento
+cd bot-discord
 ```
 ```
 cp config.json.sample config.json
