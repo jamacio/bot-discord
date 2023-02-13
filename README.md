@@ -54,9 +54,16 @@ Go to the directory and copy the configuration example
 ```
 cd bot-discord
 ```
+To get the information go to: [Discord.js](https://discord.com/developers/applications)
 ```
 cp config.json.sample config.json
 ```
+you need to add access permissions to the app, replace {{client_id}} with the CLIENT ID of your bot
+
+```
+https://discord.com/api/oauth2/authorize?client_id={{client_id}}&permissions=2147486720&scope=bot%20applications.commands
+```
+
 ---
 After running the build command
 ```
