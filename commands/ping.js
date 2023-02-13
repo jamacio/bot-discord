@@ -7,8 +7,8 @@ module.exports = {
         .setName("ping")
         .setDescription("Responde com Pong!"),
 
-    async execute(interation) {
-        console.log(interation);
-        await interation.reply("Pong!")
+    async execute(interaction) {
+        console.log(interaction);
+        await interaction.reply("Pong!")
     }
 }
