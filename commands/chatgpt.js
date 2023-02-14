@@ -17,14 +17,13 @@ module.exports = {
     async execute(interaction) {
 
         const input = interaction.options.getString("text")
-
+        await interaction.reply('Working on it');
         try {
-            await interaction.reply('Working on it');
             const result = await getOpenAI(input);
             await interaction.editReply(result);
         }
         catch (err) {
-            await interaction.reply(err.message)
+            await interaction.editReply(err.message);
         }
 
     }
