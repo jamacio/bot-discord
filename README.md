@@ -90,7 +90,8 @@ make watch
 
 - `/ping` - Display the bot's latency.
 - `/git` - Remind git commands
-- `/moeda` - Currency Quotation API
+- `/echo` - Replies with your input
+- `/chatgpt` - Discord/GPT API is a chatbot platform that allows users to have chatbot experiences in Discord
 
 ## Development
 
